@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 env:
-  cloud: google-cloud
+  cloud: Microsoft Azure
 
 jobs:
   greeting_job:
@@ -12,5 +12,5 @@ jobs:
     env:
       Greeting: Hello
     steps:
-      - name: "Say Hello to Vishal"
-        run: echo "${Greeting} ${first_name} is
+      - name: "Say Hello to Anup"
+        run: echo "${Greeting} ${first_name} is using $cloud
